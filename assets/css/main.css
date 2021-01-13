@@ -542,6 +542,7 @@ section.songs-list .songs-container .box__body-row-2 a.btn-more {
 @media screen and (max-width: 500px) {
   .dark-container .title {
     font-size: 3rem !important;
+    background: none !important;
   }
 }
 
