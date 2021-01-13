@@ -16,6 +16,14 @@ html {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,7 +139,6 @@ html {
 }
 
 .hero .dark-container {
-  background-color: rgba(0, 0, 0, 0.685);
   height: inherit;
   width: inherit;
   display: -webkit-box;
@@ -542,7 +549,6 @@ section.songs-list .songs-container .box__body-row-2 a.btn-more {
 @media screen and (max-width: 500px) {
   .dark-container .title {
     font-size: 3rem !important;
-    background-color: red !important;
   }
 }
 
