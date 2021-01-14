@@ -16,6 +16,10 @@ html {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 ul {
   list-style-type: none;
 }
@@ -99,13 +103,15 @@ a {
   border-radius: 50%;
   padding: .8rem;
   margin: 0;
+  font-weight: 700;
 }
 
 .navbar__btn a {
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   background-color: var(--primary-color);
-  padding: 1.2rem 1rem;
+  padding: 1rem;
+  font-weight: 700;
 }
 
 .navbar__btn a.navbar__btn-connexion {
@@ -129,6 +135,13 @@ a {
 .navbar__btn .green-bubble {
   height: 3.5rem;
   margin-left: 1rem;
+}
+
+.navbar .navbar__toggle-btn {
+  background: none;
+  outline: none;
+  border: none;
+  display: none;
 }
 
 .hero {
@@ -223,6 +236,83 @@ a {
   background-color: #CE0506;
   margin-top: 5rem;
   font-size: 1.9rem;
+}
+
+.mobile-navbar {
+  height: 100%;
+  width: 40%;
+  background: #0D5481;
+  color: #fff;
+  position: absolute;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  top: 0;
+  border: none;
+  z-index: 4;
+  -webkit-transition: -webkit-transform .5s ease-in;
+  transition: -webkit-transform .5s ease-in;
+  transition: transform .5s ease-in;
+  transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+}
+
+.mobile-navbar h4 {
+  padding-top: 2rem;
+  padding-left: .5rem;
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+  font-family: "Ravie";
+  background-color: #fff;
+  height: 10vh;
+  color: #000;
+  border-bottom: solid 0.5rem var(--primary-color);
+}
+
+.mobile-navbar__links {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 1.5rem;
+}
+
+.mobile-navbar__links a {
+  color: #fff;
+}
+
+.mobile-navbar__links-item {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-navbar__links-item svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: #fff;
+  margin-right: 1rem;
+}
+
+.mobile-navbar__links-item:hover {
+  background-color: #46b1f3;
 }
 
 section.songs-list {
@@ -436,6 +526,9 @@ section.songs-list .songs-container .box__body-row-2 a.btn-more {
   .navbar__links, .navbar__btn {
     display: none;
   }
+  .navbar .navbar__toggle-btn {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 1249px) {
@@ -560,6 +653,11 @@ section.songs-list .songs-container .box__body-row-2 a.btn-more {
 
 .selected-link a {
   color: #fff;
+}
+
+.show {
+  -webkit-transform: translateX(0.1%);
+          transform: translateX(0.1%);
 }
 
 .blue-font {
