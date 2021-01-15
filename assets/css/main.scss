@@ -1,3 +1,5 @@
+@import '../font/Ravie/stylesheet.css';
+
 :root {
     --primary-color: #0D5481;
 }
@@ -257,7 +259,7 @@ a{
         padding-top: 2rem;
         padding-left: .5rem;
         font-size: 1.4rem;
-        margin-bottom: 3rem;
+        // margin-bottom: 0rem;
         font-family: "Ravie";
         background-color: #fff;
         height: 10vh;
@@ -268,11 +270,9 @@ a{
     
 
     &__links{
-        padding: 2rem;
+        // padding: 2rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
         font-size: 1.5rem;
         
 
@@ -284,15 +284,15 @@ a{
         &-item{
             padding: 2rem;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-end;
+            justify-content: end;
             width: 100%;
             height: 100%;
             
             
             & svg{
-                height: 1.5rem;
-                width: 1.5rem;
+                height: 2rem;
+                width: 2rem;
                 fill: #fff;
                 margin-right: 1rem;
             }
@@ -419,7 +419,7 @@ section.songs-list {
                     }
 
                     & .vote-btn {
-                        background-color: #dbd1d1;;
+                        background-color: #0D5481;
                         border-radius: 50%;
                         padding: 1.6rem;
                         display: inline-block;
@@ -432,15 +432,15 @@ section.songs-list {
                             // background-color: black;
                             height: 2rem;
                             width: 2rem;
-                            fill: red;
+                            fill: rgb(255, 255, 255);
                             transition: all .4s;
                         }
                     }
                     & .vote-btn:hover {
-                        background-color: red;
-                        & svg {
-                            fill: #ffffff;
-                        }
+                        background-color: #2089ca;
+                        // & svg {
+                        //     fill: rgb(255, 255, 255);
+                        // }
                     }
                 }
 
