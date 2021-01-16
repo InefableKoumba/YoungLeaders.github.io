@@ -256,10 +256,10 @@ a {
   top: 0;
   border: none;
   z-index: 4;
-  -webkit-transition: -webkit-transform .5s ease-in;
-  transition: -webkit-transform .5s ease-in;
-  transition: transform .5s ease-in;
-  transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+  -webkit-transition: -webkit-transform .2s ease;
+  transition: -webkit-transform .2s ease;
+  transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease;
 }
 
 .mobile-navbar h4 {
@@ -686,6 +686,7 @@ section.songs-list .songs-container .box__body-row-2 a.btn-more {
   padding: 1rem;
   display: inline-block;
   height: 100%;
+  color: #0D5481;
 }
 
 .pagination span.selected {
