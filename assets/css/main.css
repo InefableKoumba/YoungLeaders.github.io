@@ -12,14 +12,14 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
 }
 
 html {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-  font-size: 64.5%;
+  -webkit-box-sizing: inherit !important;
+          box-sizing: inherit !important;
+  font-size: 64.5% !important;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -246,8 +246,8 @@ a {
 }
 
 .mobile-navbar {
-  height: 100%;
-  width: 40%;
+  min-height: 100vh;
+  width: 100%;
   background: #0D5481;
   color: #fff;
   position: absolute;
@@ -260,6 +260,18 @@ a {
   transition: -webkit-transform .2s ease;
   transition: transform .2s ease;
   transition: transform .2s ease, -webkit-transform .2s ease;
+}
+
+.mobile-navbar .close-btn {
+  position: absolute;
+  right: 1.4rem;
+  top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: none;
+  border: none;
+  outline: none;
+  z-index: 8;
 }
 
 .mobile-navbar h4 {
@@ -286,6 +298,8 @@ a {
 
 .mobile-navbar__links a {
   color: #fff;
+  width: 100%;
+  text-align: left;
 }
 
 .mobile-navbar__links-item {
@@ -301,6 +315,8 @@ a {
           justify-content: end;
   width: 100%;
   height: 100%;
+  text-align: center;
+  display: flex;
 }
 
 .mobile-navbar__links-item svg {
@@ -314,12 +330,7 @@ a {
   background-color: #46b1f3;
 }
 
-section.songs-list {
-  padding-left: 4rem;
-  padding-right: 3rem;
-}
-
-section.songs-list .subtitle-container {
+.subtitle-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,7 +339,7 @@ section.songs-list .subtitle-container {
           justify-content: center;
 }
 
-section.songs-list .subtitle-container .underlined-sub-title {
+.subtitle-container .underlined-sub-title {
   display: inline-block;
   text-align: center;
   display: -webkit-box;
@@ -343,18 +354,23 @@ section.songs-list .subtitle-container .underlined-sub-title {
           align-items: center;
 }
 
-section.songs-list .subtitle-container .underlined-sub-title .sub-title {
+.subtitle-container .underlined-sub-title .sub-title {
   margin-top: 6rem;
   color: #0D5481;
   font-size: 3.3rem;
   font-family: "Segoe UI";
 }
 
-section.songs-list .subtitle-container .underlined-sub-title hr {
+.subtitle-container .underlined-sub-title hr {
   margin-top: 1.9rem;
   width: 45%;
   background-color: #0D5481;
   height: .38rem;
+}
+
+section.songs-list {
+  padding-left: 4rem;
+  padding-right: 3rem;
 }
 
 section.songs-list .songs-container {
@@ -517,7 +533,24 @@ section.songs-list .songs-container .box__body-row-2 a.btn-more {
   font-size: 5rem;
 }
 
+.green-bubble-mobile-btn {
+  display: none !important;
+  position: absolute !important;
+  top: -5rem !important;
+  left: 47%;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.green-bubble-mobile-btn .green-bubble-mobile-img {
+  height: 3rem;
+}
+
 @media screen and (max-width: 1075px) {
+  .green-bubble-mobile-btn {
+    display: block !important;
+  }
   .navbar__links, .navbar__btn {
     display: none;
   }
@@ -614,6 +647,10 @@ section.songs-list .songs-container .box__body-row-2 a.btn-more {
 }
 
 @media screen and (max-width: 600px) {
+  .navbar {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
   .dark-container .title {
     font-size: 4rem !important;
   }
@@ -638,6 +675,53 @@ section.songs-list .songs-container .box__body-row-2 a.btn-more {
   .dark-container .title {
     font-size: 3rem !important;
   }
+}
+
+.contact-btn {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.contact-btn a {
+  background-color: #CE0506;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 2rem;
+  border-radius: .8rem;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 12rem;
+  background-color: #169ff5;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #169ff5 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+svg:hover {
+  cursor: pointer;
 }
 
 .selected-link {
