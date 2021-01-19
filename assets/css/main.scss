@@ -440,7 +440,7 @@ section.songs-list {
                         align-items: center;
 
                         & span {
-                            font-size: 2rem;
+                            font-size: 1.6rem;
                         }
 
                         & .song-icon {
@@ -580,7 +580,7 @@ section.songs-list {
 
 @media screen and (max-width:984px) {
     .box__header-name {
-        font-size: 1.2rem !important;
+        font-size: 1.5rem !important;
     }
 
     .underlined-sub-title {
@@ -716,7 +716,10 @@ section.songs-list {
 }
 
 @media screen and (max-width:500px) {
-
+    .box{
+        // background-color: red;
+        flex-basis: 90% !important;
+    }
     .dark-container .title {
         font-size: 3rem !important;
 

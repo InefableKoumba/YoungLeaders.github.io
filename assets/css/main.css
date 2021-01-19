@@ -457,7 +457,7 @@ section.songs-list .songs-container .box__body-row-1 .song-title-container {
 }
 
 section.songs-list .songs-container .box__body-row-1 .song-title-container span {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 section.songs-list .songs-container .box__body-row-1 .song-title-container .song-icon {
@@ -570,7 +570,7 @@ section.songs-list .songs-container .box__body-row-2 a.btn-more {
 
 @media screen and (max-width: 984px) {
   .box__header-name {
-    font-size: 1.2rem !important;
+    font-size: 1.5rem !important;
   }
   .underlined-sub-title .sub-title {
     font-size: 2rem !important;
@@ -672,6 +672,10 @@ section.songs-list .songs-container .box__body-row-2 a.btn-more {
 }
 
 @media screen and (max-width: 500px) {
+  .box {
+    -ms-flex-preferred-size: 90% !important;
+        flex-basis: 90% !important;
+  }
   .dark-container .title {
     font-size: 3rem !important;
   }
