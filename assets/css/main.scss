@@ -741,7 +741,9 @@ section.songs-list {
 
 
 //utilities
-
+a{
+    text-decoration: none;
+}
 .contact-btn {
     text-align: center;
     margin-top: 5rem;

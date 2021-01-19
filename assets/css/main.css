@@ -677,6 +677,10 @@ section.songs-list .songs-container .box__body-row-2 a.btn-more {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 .contact-btn {
   text-align: center;
   margin-top: 5rem;
