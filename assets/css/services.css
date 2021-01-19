@@ -1,0 +1,118 @@
+.tilesWrap {
+    padding: 0;
+    margin: 5rem auto;
+    list-style: none;
+    text-align: center;
+    
+    
+}
+
+.tilesWrap li {
+    display: inline-block;
+    width: 20%;
+    min-width: 27rem;
+    max-width: 28rem;
+    padding: 8rem 2rem 4rem;
+    position: relative;
+    vertical-align: top;
+    margin: 1rem;
+    min-height: 25vh;
+    background: #fdfdfd;
+    /* border: 1px solid #0357f3; */
+    text-align: left;
+    border-radius: 2rem;
+}
+
+.tilesWrap li h2 {
+    font-size: 5rem;
+    margin: 0;
+    position: absolute;
+    opacity: 0.2;
+    top: 3rem;
+    right: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.tilesWrap li h3 {
+    font-size: 2.4rem;
+    color: #363434;
+    margin-bottom: .4rem;
+}
+
+.tilesWrap li p {
+    font-size: 1.8rem;
+    /* line-height: 2.2rem; */
+    color: #241e1e;
+    margin-top: 5rem;
+}
+
+.tilesWrap li button {
+    background: transparent;
+    border: .1rem solid #3815fa;
+    padding: 1rem 2rem;
+    color: #080707;
+    border-radius: .3rem;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-4rem);
+    opacity: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.tilesWrap li button:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 120%;
+    background: #190ae2;
+    top: 0;
+    opacity: 0;
+    left: -14rem;
+    border-radius: 0 2rem 2rem 0;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.tilesWrap li:hover button {
+    transform: translateY(1.5rem);
+    opacity: 1;
+}
+
+.tilesWrap li button:hover {
+    color: #ffffff;
+}
+
+.tilesWrap li button:hover:before {
+    left: 0;
+    opacity: 1;
+}
+
+.tilesWrap li:hover h2 {
+    top: 0;
+    opacity: 0.6;
+}
+
+.tilesWrap li:before {
+    content: '';
+    position: absolute;
+    top: -0.2rem;
+    left: -0.2rem;
+    right: -0.2rem;
+    bottom: -0.2rem;
+    z-index: -1;
+    background: #fff;
+    transform: skew(2deg, 2deg);
+}
+
+.tilesWrap li:after {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.02);
+}
+

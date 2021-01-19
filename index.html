@@ -4,675 +4,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kin-Hop | Votez pour votre morceau préféré</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Young Leaders | ONG</title>
+    <link rel="stylesheet" href="assets/sass/main.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="assets/css/objectifs.css">
+
 </head>
 
 <body>
-    <div class="mobile-navbar">
-        <h4><span style="color:#0D5481;">Kin-</span><span style="color: red;">Hop</span>.com</h4>
-        <button class="close-btn">X</button>
-        <ul class="mobile-navbar__links">
-            <li class="mobile-navbar__links-item">
-                <svg class="">
-                    <use href="assets/img/symbol-defs2.svg#icon-home"></use>
-                </svg>
-                <a href="index.html">Accueil</a>
-            </li>
-            <li class="mobile-navbar__links-item">
-                <svg class="">
-                    <use href="assets/img/symbol-defs2.svg#icon-share"></use>
-                </svg>
-                <a href="assets/pages/publier.html">Publier</a>
-            </li>
-            <li class="mobile-navbar__links-item">
-                <svg class="">
-                    <use href="assets/img/symbol-defs2.svg#icon-share"></use>
-                </svg>
-                <a href="assets/pages/buzz.html">Buzz</a>
-            </li>
-            <li class="mobile-navbar__links-item">
-                <svg class="">
-                    <use href="assets/img/symbol-defs.svg#icon-info"></use>
-                </svg>
-                <a href="assets/pages/news.html">News</a>
-            </li>
-            <li class="mobile-navbar__links-item">
-                <svg class="">
-                    <use href="assets/img/symbol-defs.svg#icon-info"></use>
-                </svg>
-                <a href="assets/pages/news.html">Culture</a>
-            </li>
-            <li class="mobile-navbar__links-item">
-                <svg class="">
-                    <use href="assets/img/symbol-defs3.svg#icon-enter"></use>
-                </svg>
-                <a href="assets/pages/login.html">Connexion</a>
-            </li>
-            <li class="mobile-navbar__links-item">
-                <svg class="">
-                    <use href="assets/img/symbol-defs3.svg#icon-user-plus"></use>
-                </svg>
-                <a href="assets/pages/register.html">Inscription</a>
-            </li>
-            <li class="mobile-navbar__links-item">
-                <svg class="">
-                    <use href="assets/img/symbol-defs3.svg#icon-exit"></use>
-                </svg>
-                <a href="assets/pages/register.html">Déconnexion</a>
-            </li>
-
-        </ul>
-    </div>
+    <div>
     <nav class="navbar">
-        <div class="navbar__logo">
-            <img src="assets/img/logokh.jpg" alt="">
+        <div class="navbar__logo-container">
+            <img class="navbar__logo-container__logo" src="assets/img/IMG-20191110-WA0004.jpg" alt="">
         </div>
         <ul class="navbar__links">
-            <li class="navbar__links-item selected-link">
-                <a href="index.html">Accueil</a>
-            </li>
-            <li class="navbar__links-item">
-                <a href="assets/pages/publier.html">Publier</a>
-            </li>
-            <li class="navbar__links-item">
-                <a href="assets/pages/buzz.html">Buzz</a>
-            </li>
-            <li class="navbar__links-item">
-                <a href="assets/pages/news.html">News</a>
-            </li>
-            <li class="navbar__links-item">
-                <a href="assets/pages/culture.html">Culture</a>
-            </li>
+            <li class="navbar__links-link selected"><a href="#">Home</a></li>
+            <li class="navbar__links-link"><a href="#">Our services</a></li>
+            <li class="navbar__links-link"><a href="#">About us</a></li>
+            <li class="navbar__links-link"></li>
         </ul>
-        <div class="navbar__btn">
-            <div>
-                <a href="assets/pages/login.html" class="navbar__btn-connexion">Connexion</a>
-                <span>OU</span>
-                <a href="assets/pages/register.html" class="navbar__btn-subscription">Inscription</a>
-            </div>
-            <svg class="navbar__btn-user-icon">
-                <use href="assets/img/symbol-defs.svg#icon-user"></use>
-            </svg>
-            <img class="green-bubble" src="assets/img/NovotedCopie.jpg" alt="" title="">
-            <!-- <svg class="search-form-search-user">
-				<use xlink:href="icomoon/symbol-defs.svg#icon-user"></use>
-			</svg> -->
-            <!-- <img class="navbar__btn-user-icon" src="assets/img/user.svg" alt=""> -->
+        <div class="dropdown-container center" >
+            <div class="bar1"></div>
+            <img src="assets/img/nav_icon.svg" class="bar2" alt="">
+            <div class="bar3"></div>
         </div>
-        <button class="navbar__toggle-btn">
-            <img id="toggle_btn" src="assets/img/nav_icon.svg" alt="">
-        </button>
+        
+        
     </nav>
-    <header class="hero" style="background-image: url(assets/img/c-d-x-PDX_a_82obo-unsplashrhh.jpg);">
-        <div class="dark-container">
-            <!-- <a href="#" class="vote-bubble"><img src="assets/img/NovotedCopie.jpg" alt=""></a> -->
-            <div class="container">
-                <button type="button" class="green-bubble-mobile-btn tooltip" title="Tooltip on bottom">
-                    <img class="green-bubble-mobile-img" src="assets/img/NovotedCopie.jpg" alt="">
-                    <span class="tooltiptext">Il vous reste 2 votes</span>
-                </button>
-                <h1 class="title"><span class="blue-font">KIN-</span><span class="red-font">HOP</span>.com</h1>
-                <span class="slogan">Démocratie Musicale</span>
-                <form action="" class="search-form">
-                    <input type="text" class="search-form-input">
-                    <button type="submit">
-                        <svg class="navbar__btn-user-icon">
-                            <use href="assets/img/symbol-defs.svg#icon-search"></use>
-                        </svg>
-                    </button>
-                </form>
-                <a href="assets/pages/publier.html" class="btn btn-red">Publier un morceau</a>
+    
+      <ul id ="mobile-menu" class="menu-hidden">
+        <li><a href="">HOME</a></li>
+        <li><a href="">Nos services</a></li>
+        <li><a href="">Nos objectifs</a></li>
+        <li><a href="">A propos de nous</a></li>
+      </ul>
+    <header class="header">
+        <div class="header__dark-container">
+            <div class="header__infos">
+                <h1 class="header__infos-name">Young Leaders</h1>
+                <p class="header__infos-text">Une équipe de jeunes dynamiques prêts à l'action</p>
+                <a href="#" class="btn-contact">Contact</a>
             </div>
-            <span class="message">Vous êtes notre Kin-Hop Star, n'attendez plus!</span>
         </div>
     </header>
-    <section class="songs-list">
-        <div class="subtitle-container">
-            <div class="underlined-sub-title">
-                <h2 class="sub-title">Votez pour votre artiste préféré</h2>
-                <hr>
-            </div>
+    <section class="section-presentation">
+        <div class="section-presentation__img">
+            <img src="assets/img/5235.svg" alt="" height="">
         </div>
-        <div class="songs-container">
-            <div class="box">
-                <div class="box__header">
-                    <span class="box__header-name">A Boogie wit da hoodie</span>
-                    <img class="box__header-img" src="assets/img/IMG_0975Copie.JPG" alt="profile-image">
-                </div>
-                <div class="box__body">
-                    <div class="box__body-row-1">
-                        <div class="song-title-container">
-                            <svg class="song-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-music"></use>
-                            </svg>
-                            <span class="song-title">Kitoko</span>
-                        </div>
-                        <a href="#" class="vote-btn">
-                            <svg class="checkmark-icon">
-                                <use href="assets/img/symbol-defs.svg#icon-checkmark"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="box__body-row-2">
-                        <a href="assets/music/y2mate.com - Life Story  New Motivational Whatsapp Status .mp3"
-                            class="play-btn">
-                            <svg class="play-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-headphones"></use>
-                            </svg>
-                        </a>
-                        <a href="assets/music/y2mate.com - Life Story  New Motivational Whatsapp Status .mp3" download
-                            class="download-btn">
-                            <svg class="download-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-download"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="share-btn">
-                            <svg class="share-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-share2"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="btn-more">...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box__header">
-                    <span class="box__header-name">Don Krak</span>
-                    <img class="box__header-img" src="assets/img/IMG_0975Copie.JPG" alt="profile-image">
-                </div>
-                <div class="box__body">
-                    <div class="box__body-row-1">
-                        <div class="song-title-container">
-                            <svg class="song-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-music"></use>
-                            </svg>
-                            <span class="song-title">Kitoko</span>
-                        </div>
-                        <a href="#" class="vote-btn">
-                            <svg class="checkmark-icon">
-                                <use href="assets/img/symbol-defs.svg#icon-checkmark"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="box__body-row-2">
-                        <a href="#" class="play-btn">
-                            <svg class="play-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-headphones"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="download-btn">
-                            <svg class="download-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-download"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="share-btn">
-                            <svg class="share-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-share2"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="btn-more">...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box__header">
-                    <span class="box__header-name">Don Krak</span>
-                    <img class="box__header-img" src="assets/img/IMG_0975Copie.JPG" alt="profile-image">
-                </div>
-                <div class="box__body">
-                    <div class="box__body-row-1">
-                        <div class="song-title-container">
-                            <svg class="song-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-music"></use>
-                            </svg>
-                            <span class="song-title">Kitoko</span>
-                        </div>
-                        <a href="#" class="vote-btn">
-                            <svg class="checkmark-icon">
-                                <use href="assets/img/symbol-defs.svg#icon-checkmark"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="box__body-row-2">
-                        <a href="#" class="play-btn">
-                            <svg class="play-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-headphones"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="download-btn">
-                            <svg class="download-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-download"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="share-btn">
-                            <svg class="share-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-share2"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="btn-more">...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box__header">
-                    <span class="box__header-name">Don Krak</span>
-                    <img class="box__header-img" src="assets/img/IMG_0975Copie.JPG" alt="profile-image">
-                </div>
-                <div class="box__body">
-                    <div class="box__body-row-1">
-                        <div class="song-title-container">
-                            <svg class="song-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-music"></use>
-                            </svg>
-                            <span class="song-title">Kitoko</span>
-                        </div>
-                        <a href="#" class="vote-btn">
-                            <svg class="checkmark-icon">
-                                <use href="assets/img/symbol-defs.svg#icon-checkmark"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="box__body-row-2">
-                        <a href="#" class="play-btn">
-                            <svg class="play-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-headphones"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="download-btn">
-                            <svg class="download-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-download"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="share-btn">
-                            <svg class="share-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-share2"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="btn-more">...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box__header">
-                    <span class="box__header-name">Don Krak</span>
-                    <img class="box__header-img" src="assets/img/IMG_0975Copie.JPG" alt="profile-image">
-                </div>
-                <div class="box__body">
-                    <div class="box__body-row-1">
-                        <div class="song-title-container">
-                            <svg class="song-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-music"></use>
-                            </svg>
-                            <span class="song-title">Kitoko</span>
-                        </div>
-                        <a href="#" class="vote-btn">
-                            <svg class="checkmark-icon">
-                                <use href="assets/img/symbol-defs.svg#icon-checkmark"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="box__body-row-2">
-                        <a href="#" class="play-btn">
-                            <svg class="play-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-headphones"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="download-btn">
-                            <svg class="download-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-download"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="share-btn">
-                            <svg class="share-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-share2"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="btn-more">...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box__header">
-                    <span class="box__header-name">Don Krak</span>
-                    <img class="box__header-img" src="assets/img/IMG_0975Copie.JPG" alt="profile-image">
-                </div>
-                <div class="box__body">
-                    <div class="box__body-row-1">
-                        <div class="song-title-container">
-                            <svg class="song-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-music"></use>
-                            </svg>
-                            <span class="song-title">Kitoko</span>
-                        </div>
-                        <a href="#" class="vote-btn">
-                            <svg class="checkmark-icon">
-                                <use href="assets/img/symbol-defs.svg#icon-checkmark"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="box__body-row-2">
-                        <a href="#" class="play-btn">
-                            <svg class="play-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-headphones"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="download-btn">
-                            <svg class="download-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-download"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="share-btn">
-                            <svg class="share-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-share2"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="btn-more">...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box__header">
-                    <span class="box__header-name">Don Krak</span>
-                    <img class="box__header-img" src="assets/img/IMG_0975Copie.JPG" alt="profile-image">
-                </div>
-                <div class="box__body">
-                    <div class="box__body-row-1">
-                        <div class="song-title-container">
-                            <svg class="song-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-music"></use>
-                            </svg>
-                            <span class="song-title">Kitoko</span>
-                        </div>
-                        <a href="#" class="vote-btn">
-                            <svg class="checkmark-icon">
-                                <use href="assets/img/symbol-defs.svg#icon-checkmark"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="box__body-row-2">
-                        <a href="#" class="play-btn">
-                            <svg class="play-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-headphones"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="download-btn">
-                            <svg class="download-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-download"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="share-btn">
-                            <svg class="share-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-share2"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="btn-more">...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box__header">
-                    <span class="box__header-name">Don Krak</span>
-                    <img class="box__header-img" src="assets/img/IMG_0975Copie.JPG" alt="profile-image">
-                </div>
-                <div class="box__body">
-                    <div class="box__body-row-1">
-                        <div class="song-title-container">
-                            <svg class="song-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-music"></use>
-                            </svg>
-                            <span class="song-title">Kitoko</span>
-                        </div>
-                        <a href="#" class="vote-btn">
-                            <svg class="checkmark-icon">
-                                <use href="assets/img/symbol-defs.svg#icon-checkmark"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="box__body-row-2">
-                        <a href="#" class="play-btn">
-                            <svg class="play-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-headphones"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="download-btn">
-                            <svg class="download-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-download"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="share-btn">
-                            <svg class="share-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-share2"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="btn-more">...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box__header">
-                    <span class="box__header-name">Don Krak</span>
-                    <img class="box__header-img" src="assets/img/IMG_0975Copie.JPG" alt="profile-image">
-                </div>
-                <div class="box__body">
-                    <div class="box__body-row-1">
-                        <div class="song-title-container">
-                            <svg class="song-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-music"></use>
-                            </svg>
-                            <span class="song-title">Kitoko</span>
-                        </div>
-                        <a href="#" class="vote-btn">
-                            <svg class="checkmark-icon">
-                                <use href="assets/img/symbol-defs.svg#icon-checkmark"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="box__body-row-2">
-                        <a href="#" class="play-btn">
-                            <svg class="play-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-headphones"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="download-btn">
-                            <svg class="download-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-download"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="share-btn">
-                            <svg class="share-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-share2"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="btn-more">...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box__header">
-                    <span class="box__header-name">Don Krak</span>
-                    <img class="box__header-img" src="assets/img/IMG_0975Copie.JPG" alt="profile-image">
-                </div>
-                <div class="box__body">
-                    <div class="box__body-row-1">
-                        <div class="song-title-container">
-                            <svg class="song-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-music"></use>
-                            </svg>
-                            <span class="song-title">Kitoko</span>
-                        </div>
-                        <a href="#" class="vote-btn">
-                            <svg class="checkmark-icon">
-                                <use href="assets/img/symbol-defs.svg#icon-checkmark"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="box__body-row-2">
-                        <a href="#" class="play-btn">
-                            <svg class="play-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-headphones"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="download-btn">
-                            <svg class="download-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-download"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="share-btn">
-                            <svg class="share-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-share2"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="btn-more">...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box__header">
-                    <span class="box__header-name">Don Krak</span>
-                    <img class="box__header-img" src="assets/img/IMG_0975Copie.JPG" alt="profile-image">
-                </div>
-                <div class="box__body">
-                    <div class="box__body-row-1">
-                        <div class="song-title-container">
-                            <svg class="song-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-music"></use>
-                            </svg>
-                            <span class="song-title">Kitoko</span>
-                        </div>
-                        <a href="#" class="vote-btn">
-                            <svg class="checkmark-icon">
-                                <use href="assets/img/symbol-defs.svg#icon-checkmark"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="box__body-row-2">
-                        <a href="#" class="play-btn">
-                            <svg class="play-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-headphones"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="download-btn">
-                            <svg class="download-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-download"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="share-btn">
-                            <svg class="share-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-share2"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="btn-more">...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="box__header">
-                    <span class="box__header-name">Don Krak</span>
-                    <img class="box__header-img" src="assets/img/IMG_0975Copie.JPG" alt="profile-image">
-                </div>
-                <div class="box__body">
-                    <div class="box__body-row-1">
-                        <div class="song-title-container">
-                            <svg class="song-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-music"></use>
-                            </svg>
-                            <span class="song-title">Kitoko</span>
-                        </div>
-                        <a href="#" class="vote-btn">
-                            <svg class="checkmark-icon">
-                                <use href="assets/img/symbol-defs.svg#icon-checkmark"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="box__body-row-2">
-                        <a href="#" class="play-btn">
-                            <svg class="play-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-headphones"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="download-btn">
-                            <svg class="download-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-download"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="share-btn">
-                            <svg class="share-icon">
-                                <use href="assets/img/symbol-defs2.svg#icon-share2"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="btn-more">...</a>
-                    </div>
-                </div>
-            </div>
+        <div class="section-presentation__text">
+            <h2 class="sub-title">Qui sommes nous ?</h2>
+            <p>Nous sommes une équipe de jeunes dynamiques ayant choisi d'investir dans le capital humain en favorisant
+                la formation des jeunes dans le business, l'entrepreneuriat, les technologies d'information et de
+                communication ainsi que dans bien d'autres domaines. Nous préparons les jeunes pour un futur meilleure à
+                travers nos programmes de coaching et d'orientation
+            </p>
         </div>
-        <div class="pagination">
-            <span class="selected"><a href="">1</a></span>
-            <span><a href="#">2</a></span>
-            <span><a href="#">3</a></span>
-            <span><a href="#">...</a></span>
-            <span><a href="#">5</a></span>
-
-        </div>
-        <hr class="bottom-line">
     </section>
-
-    <div class="contact-btn">
-        <a href="assets/pages/contact.html">Nous contacter</a>
-    </div>
+    <section class="section-politic">
+        <div class="dark-container">
+            <div class="container">
+                <div class="section-politic__img-container">
+                    <img class="img" src="assets/img/370345-PBC2JO-533.jpg" alt="">
+                </div>
+                <div class="section-politic__text">
+                    <h2 class="subtitle">Politique de travail</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                        irure
+                        dolor
+                        in reprehenderit in voluptate velit esse
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-services">
+        <h2 class="sub-title">Nos Services</h2>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. <br> Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s.
+        </p>
+        <div>
+            <ul class="tilesWrap">
+                <li>
+                    <h2>01</h2>
+                    <h3>Formation en langue anglaise</h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever
+                        since the 1500s.
+                    </p>
+                    <button>Read more</button>
+                </li>
+                <li>
+                    <h2>02</h2>
+                    <h3>Formation en langue anglaise</h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever
+                        since the 1500s.
+                    </p>
+                    <button>Read more</button>
+                </li>
+                <li>
+                    <h2>03</h2>
+                    <h3>Formation en langue anglaise</h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever
+                        since the 1500s.
+                    </p>
+                    <button>Read more</button>
+                </li>
+                <li>
+                    <h2>04</h2>
+                    <h3>Formation en langue anglaise</h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever
+                        since the 1500s.
+                    </p>
+                    <button>Read more</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="section-objectifs">
+        <h2 class="sub-title">Nos Objectifs</h2>
+        <ol class="gradient-list">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Aenean tincidunt elit at ipsum cursus, vitae interdum nulla suscipit.</li>
+            <li>Curabitur in orci vel risus facilisis accumsan.</li>
+            <li>Morbi eleifend tortor lacinia sapien sagittis, quis pellentesque felis egestas.</li>
+            <li>Aenean viverra dui quis leo lacinia fringilla.</li>
+            <li>Sed varius lectus ac condimentum egestas.</li>
+            <li>Maecenas faucibus lorem nec lorem posuere, a rhoncus velit porttitor.</li>
+            <li>Proin porta arcu ac elit malesuada pulvinar.</li>
+            <li>Phasellus vitae felis sit amet mi gravida volutpat.</li>
+            <li>Curabitur vulputate urna non efficitur interdum.</li>
+          </ol>
+    </section>
     <footer class="footer">
-        <div class="contact">
-            <h4>NOS COORDONNEES </h4>
-            <div>
-                <svg class="share-icon">
-                    <use href="assets/img/symbol-defs2.svg#icon-phone"></use>
-                </svg>
-                <span>+243891128407</span>
-                </span>
-            </div>
-            <div>
-                <svg class="share-icon">
-                    <use href="assets/img/symbol-defs2.svg#icon-envelop"></use>
-                </svg>
-                <span>contact@kin-hop.com</span>
-                </span>
-            </div>
-        </div>
-        <ul class="links">
-            <h4 style="font-size: 2rem; color:rgba(255, 255, 255, 0.808)">LIENS UTILES</h4>
-            <li><a href="">S'inscrire</a></li>
-            <li><a href="">Se connecter</a> </li>
-            <li><a href="">Mon compte</a> </li>
-            <li><a href="">Achat de droit de vote</a> </li>
-            <li><a href="">Termes & conditions</a> </li>
-            <li><a href="">Qui sommes nous?</a> </li>
-            <li><a href="">FAQ</a> </li>
-        </ul>
-        <div class="social-media">
-            <a href="">
-                <span>
-                    <svg class="share-icon">
-                        <use href="assets/img/symbol-defs3.svg#icon-facebook"></use>
-                    </svg>
-                </span>
-            </a>
-            <a href="">
-                <span>
-                    <svg class="share-icon">
-                        <use href="assets/img/symbol-defs3.svg#icon-whatsapp"></use>
-                    </svg>
-                </span>
-            </a>
-            <a href="">
-                <span>
-                    <svg class="share-icon">
-                        <use href="assets/img/symbol-defs3.svg#icon-instagram"></use>
-                    </svg>
-                </span>
-            </a>
-        </div>
+        
     </footer>
-
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

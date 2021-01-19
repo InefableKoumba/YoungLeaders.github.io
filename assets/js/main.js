@@ -1,25 +1,28 @@
-// Nabigation toggle button
+const dropdownContainer = document.querySelector(".dropdown-container")
+dropdownContainer.addEventListener('click',
+  function (e) {
+    // x.classList.toggle("change");
+    $("#mobile-menu").toggleClass("menu-hidden", 800, "easeOutQuint");
+    console.log(e.target)
+  }
+)
 
-const navToggleBtn = document.querySelector('.navbar__toggle-btn')
-const mobileNavaBar = document.querySelector('.mobile-navbar')
-const toggle_btn = document.querySelector('#toggle_btn')
-const closeBtn = document.querySelector('.close-btn')
-const mobileNavBar = document.querySelector('.mobile-navbar__links')
-navToggleBtn.addEventListener('click', (e)=>{
-    if (screen.width < 1075) mobileNavaBar.classList.toggle('show')
-    
-})
-closeBtn.addEventListener('click', (e)=>{
-    if (screen.width < 1075) mobileNavaBar.classList.remove('show')
-    
-})
-// document.addEventListener("scroll",(e)=>{
-//     if (screen.width < 1075) mobileNavaBar.classList.remove('show')
+
+// $('body').on('click', (e) => {
+//   //if (!$(e.target).hasClass('bar2')) {
+//     // dropdownContainer.classList.remove('menu-hidden')
+//     console.log($(".dropdown-container"))
+//     $(".dropdown-container").removeClass("menu-hidden")
+//     console.log('yeah')
+//   //}
+
 // })
-// document.addEventListener("click",(e)=>{
-//     // if ((screen.width < 1075) && e.target in ) mobileNavaBar.classList.remove('show')
-//     if (screen.width < 1075 ){
-//         if(e.target != mobileNavBar && e.target != toggle_btn) mobileNavaBar.classList.remove('show')
-        
-//     }
-// })
+
+document.addEventListener('scroll', (e) => {
+  if (!$(e.target).hasClass('bar2')) {
+    // dropdownContainer.classList.remove('menu-hidden')
+    $("#menu-hidden").removeClass("menu-hidden")
+    console.log('yeah')
+  //}
+}
+})

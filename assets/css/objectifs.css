@@ -1,0 +1,71 @@
+.section-objectifs{
+    display: block;
+    margin: 0 auto;
+    max-width: 80vw;
+    padding: 1rem;
+    /* background-color: red; */
+}
+ol.gradient-list {
+    counter-reset: gradient-counter;
+    list-style: none;
+    /* margin: 1.75rem 0; */
+    padding-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+ol.gradient-list>li {
+    background-color: #f5f5f5;
+    border-radius: 0 1rem 1rem 1rem;
+    counter-increment: gradient-counter;
+    margin-top: 1rem;
+    min-height: 3rem;
+    padding: 1rem 1rem 1rem 3rem;
+    position: relative;
+    font-size: 2.2rem;
+    flex-basis: 40%;
+    
+  
+}
+ol.gradient-list>li:nth-child(odd){
+    margin-right: 6rem;
+}
+
+ol.gradient-list>li::before,
+ol.gradient-list>li::after {
+    background: linear-gradient(135deg, #2236e9 0%, #2a09e2 100%);
+    border-radius: 1rem 1rem 0 1rem;
+    content: "";
+    height: 4rem;
+    left: -4rem;
+    overflow: hidden;
+    position: absolute;
+    top: -1rem;
+    width: 5rem;
+
+}
+
+ol.gradient-list>li:before {
+    align-items: flex-end;
+    content: counter(gradient-counter);
+    color: #ffffff;
+    display: flex;
+    font-size: 2.7rem;
+    justify-content: flex-end;
+    padding: 0.125em 0.25em;
+    z-index: 1;
+}
+
+ol.gradient-list>li:before {
+    background: linear-gradient(135deg, rgba(106, 53, 253, 0.835) 0%, rgba(52, 7, 200, 0.911) 100%);
+}
+
+
+ol.gradient-list>li+li {
+    margin-top: 2rem;
+}

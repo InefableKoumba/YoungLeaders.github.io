@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    box-sizing: inherit;
+    font-size: 64.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    z-index: 20 ;  
+    height: 10vh;
+    width: 100%;
+    
+    // background-color: red;
+    padding-left: 5rem;
+    align-items: center;
+    justify-content: center;
+    // position: fixed;
+    border-bottom: solid 2px blue;
+    
+
+    &__logo-container{
+        height: 9vh;
+        // flex-basis: 30%;
+        // width: 200px;
+        // background-color: blue;
+        position: absolute;
+        left: 4rem;
+
+        &__logo{
+            height: inherit;
+        }
+    }
+    &__links{
+        display: flex;
+
+        &-link:not(:last-child){
+            margin-right:2rem ;
+        }
+        
+    }
+    &__links{
+        display: flex;
+        height: inherit;
+        // background-color: yellow;
+        align-items: center;
+        
+        &-link{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            font-size: 2rem;
+           
+            & a{
+                color: #0137EF; 
+
+            }
+        }
+    }
+    
+}
+.selected{
+    background-color: #0137EF;
+    padding-left:1rem ;
+    padding-right: 1rem; 
+    & a{
+        color: #fff;
+    }
+}
+.header{
+    height: 90vh;
+    background-image: url(../img/19362688.svg);
+    background-size: cover;
+    background-position: center;
+    
+    
+    &__dark-container{
+        padding-top: 12rem;
+        height: inherit;
+        width: 50%;
+        margin-left:50%;
+        background-color: rgba(0, 0, 0, 0.459);
+        
+    }
+    
+    &__infos{
+        color: #fff;
+        // background-color: red;
+        width: 60%;
+        margin:  auto;
+        text-align: center;
+        
+        &-name{
+            font-size: 5rem;
+            margin-bottom: 4rem;
+        }
+        &-text{
+            font-size: 2rem;
+            margin-bottom: 6rem;
+        }
+        & .btn-contact{
+            background-color: #0137EF;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            color: #fff;
+            font-size: 1.8rem;
+            border-radius: .4rem;
+        }
+    }
+}
+.section-presentation{
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 6rem;
+    padding-right: 10rem;
+    flex-wrap: wrap;
+
+    &__img{
+        flex-basis: 50%;
+    }
+    &__text{
+        padding-top: 5rem;
+        flex-basis: 50%;
+
+        & .sub-title{
+            margin-bottom: 4rem;
+            text-align:center;
+        }
+        & p{
+            font-size: 1.7rem;
+            text-align: justify;
+        }
+    }
+}
+.sub-title{
+    color: #0137EF;
+    font-size: 3rem;
+}
+.gray{
+    background-color: #f5f5f5;
+}
+.section-politic{
+    
+    background-image: url(../img/green-chameleon-s9CC2SKySJM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    // padding-top: 7rem;
+    // padding-bottom: 7rem;
+    
+    height: 90vh;
+
+    & .dark-container{
+        background-color: rgba(0, 0, 0, 0.829);
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    & .container{
+        display: flex;
+        height: 80%;
+        width: 80%;
+        flex-wrap: wrap;
+        // background-color: blue;
+        margin: 0 auto;
+        align-items: center;
+        
+    }
+    &__img-container{
+        flex-basis: 40%;
+        height: 50%;
+        // background-color: red;
+        & .img{
+            // height: 100%;
+            width: 80%;
+            border-radius: 1rem;
+        }
+    }
+    &__text{
+        // background-color: yellow;
+        text-align: center;
+        flex-basis: 50%;
+        
+        & .subtitle{
+            font-size: 4rem;
+            color: #fff;
+            margin-bottom: 3rem;
+        }
+        & p{
+            text-align: justify;
+            color: #fff;
+            font-size: 2.1rem;
+        }
+    }
+}
+
+.section-services{
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    background-color: #f5f5f5;
+    text-align: center;
+
+    & p{
+        font-size: 1.6rem;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    & .sub-title{
+        margin-bottom: 2rem;
+    }
+}
+
+.section-objectifs{
+    text-align: center;
+    padding-top: 4rem !important;
+
+    & .sub-title{
+        margin-bottom: 4rem;
+    }
+
+}
+@media screen and (max-width: 900px) {
+    ol.gradient-list li{
+        flex-basis: 100% !important;
+        
+    }
+    ol.gradient-list>li:nth-child(odd){
+        margin-right: 0 !important;
+    }
+    .header__dark-container{
+        width: 100%;
+        margin-left: 0;
+        
+    }
+    .section-presentation__img{
+        flex-basis:100%;
+        margin-bottom: 0;
+        height: 50%;
+        // background-color: red;
+        
+    }
+    .section-presentation__text{
+        flex-basis:100%;
+        // margin-top: 0;
+        // background-color: yellow;
+
+        // & .sub-title{
+        //     margin-top: 0;
+        //     padding: 0;
+        // }  
+        // background-color: red;
+        & p{
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
+    .section-politic{
+        height: auto;
+    }
+    .section-presentation{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .dark-container{
+        & .container{
+            
+            .section-politic__img-container{
+                flex-basis: 100%;
+            }
+            .section-politic__text{
+                flex-basis: 100%;
+                padding-bottom: 4rem;
+            }
+        }
+    }
+    .section-politic__img-container{
+        
+        & img{
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            margin-left: 4rem;
+        }
+    }
+    .section-objectifs{
+        padding-left: 4rem !important;
+        padding-right: 4rem !important;
+    }
+    .header{
+        height: 50vh;
+
+        &__infos{
+            color: #fff;
+            // background-color: red;
+            width: 80%;
+            margin:  auto;
+            text-align: center;
+            
+            &-name{
+                font-size: 3rem;
+                margin-bottom: 2.2rem;
+            }
+            &-text{
+                font-size: 1.8rem;
+                margin-bottom: 4rem;
+            }
+            & .btn-contact{
+                background-color: #0137EF;
+                padding-left: 1.4rem;
+                padding-right: 1.4rem;
+                padding-top: 1.1rem;
+                padding-bottom: 1.1rem;
+                color: #fff;
+                font-size: 1.3rem;
+                border-radius: .4rem;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .navbar__links{
+        display: none;
+    }
+    .dropdown-container{
+        display: block !important;
+    }
+}
+
+
+
+
+
+
+
+
+.dropdown-container {
+    // display: block;
+    z-index: 1;
+    padding: 0.5em;
+    padding-left: 0em;
+    // background-color: red;
+    position: absolute;
+    right: 4rem;
+    display: none;
+  }
+
+// .bar1, .bar3 {
+//     display: inline-block;
+//     width: 35px;
+//     height: 5px;
+//     background-color: #333;
+//     margin: 6px 0;
+//     transition: 0.4s;
+//   }
+  .bar2{
+    cursor: pointer;
+    // vertical-align: middle;
+    // height: 5px;
+    // font-size: 1.2em;
+    // margin-top: -14px;
+    // margin-bottom: 10px;
+    // transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+//   .change .bar1 {
+//     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+//     transform: rotate(-45deg) translate(-9px, 6px) ;
+//   }
+  
+  /* Fade out the second bar */
+//   .change .bar2 {
+//     opacity: 0;
+//   }
+  
+  /* Rotate last bar */
+//   .change .bar3 {
+//     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+//     transform: rotate(45deg) translate(-8px, -8px) ;
+//   }
+
+  #mobile-menu{
+    position: fixed;
+    text-align: center;
+    list-style: none;
+    background: #0137EF;
+    width: 50%;
+    // margin: 0 auto;
+    color: white;
+    // padding-top: 3.9em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .0), 0 6px 6px rgba(0, 0, 0, 0.1);
+    transform: translateX(50%);
+  }
+  #mobile-menu ul{
+    margin: none !important;
+  
+  }
+  #mobile-menu li:not(:last-child){
+    // margin: none !important;
+    border-bottom: 1px solid #fff;
+    // padding-bottom: 1rem;
+    
+  }
+  #mobile-menu li{
+    margin: none !important;
+    padding-top:1.1rem;
+    padding-bottom: 2.5rem;
+    
+  }
+  #mobile-menu li a{
+    font-size: 1.6rem;
+    // border-style: solid;
+    // border-top:  solid #FF836D;
+    border-left-style: none;
+    border-bottom: none;
+    display:inline-block;
+    padding-top: 1em;
+    // padding-bottom: 1em;
+    width: 100%;
+    color: white;
+    transition: background-color 0.6s ease;
+  
+  }
+  #mobile-menu li:hover{
+    transition: background-color 0.6s ease;
+    background: #4361c4;
+  
+  }
+  .menu-hidden{
+    margin-top: -40rem;
+  }
+  .footer{
+      height: 10vh;
+      background-color: #0137EF;
+      margin-top: 8rem;
+  }
